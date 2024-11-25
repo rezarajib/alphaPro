@@ -1,8 +1,41 @@
+// keyboard press handle button clicked
+// function handleKeyboardButtonPress(){
+//     console.log('button press')
+// }
+// document.addEventListener('keyup', handleKeyboardButtonPress);
+
+// document.addEventListener('keyup',handleKeyboardButtonPress);
+
+// function keyboardPressHandleButton(){
+//              console.log("keyboard press button for the clicked");
+// };
+// document.addEventListener('keyup',keyboardPressHandleButton);
+
+ function handleKeyboardButtonPress(event){
+     const playerKeyPress = event.key;
+     console.log('playerPressed',playerKeyPress);
+    //  get the expected to press
+    const currentAlphabetElement = document.getElementById('current-alphabet');
+    const currentAlphabet = currentAlphabetElement.innerText;
+    const expectedAlphabet = currentAlphabet.toLowerCase();
+    console.log('Your Final Alphabet',playerKeyPress,expectedAlphabet);
+    if(playerKeyPress === expectedAlphabet){
+        console.log("you are lucky ");
+    }
+    else{
+        console.log("no lucky man again try");
+    }
+
+
+
+ }
+ document.addEventListener('keyup',handleKeyboardButtonPress);
 function play(){
     hideElementById('home-screen');
     showElementById('play-ground');
     continueGame();
-}
+//     handleKeyboardButtonPress();
+ }
 
 function continueGame(){
     const alphabet = getARandomAlphabet();
@@ -46,3 +79,4 @@ function continueGame(){
 // // //     showElementById('play-ground');
 // // //     continueGame();
 // // // }
+// the all node this project 

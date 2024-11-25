@@ -13,7 +13,7 @@ function getARandomAlphabet(){
     const randomNumber = Math.random()*25;
     const index = Math.round(randomNumber);
     const alphabet = alphabets[index];
-    return alphabet;
+    return alphabet; 
 }
 // function getARandomAlphabet(){
 //         const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
